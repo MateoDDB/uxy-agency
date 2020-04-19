@@ -1,0 +1,394 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.15em;
+  font-family: 'Telex', sans-serif;
+}
+h1 {
+  color: #5AE6D3;
+}
+.image-marine {
+  width: 300px;
+}
+
+
+#romane {
+
+  color: red;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper .wrapper__video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text-banner  {
+  position:absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content {
+  text-align: center;
+}
+.text-banner h1 {
+  max-width: 1152px;
+  margin: 0 auto 50px auto;
+  font-size:144px;
+  text-align: center;
+  color:white;
+  letter-spacing: 0.30em;
+  line-height: 200px;
+}
+
+.bloc-work {
+  display: flex;
+  align-items: center;
+  max-width: 1152px;
+  margin: 0 auto 50px auto;
+  padding-left: 90px;
+  background-size:cover;
+  background-position: center;
+}
+
+.ux-title h2 {
+  font-size: 400px;
+  margin: 0;
+  letter-spacing: -0.1em;
+}
+
+.ux-description h3 {
+  font-size:48px;
+  color:#C5C5C4;
+}
+
+.ux-description hr {
+  border: 4px solid #FA8E8E;
+  width: 350px;
+}
+
+.ux-description p {
+  font-size: 20px;
+  margin: 60px 0;
+}
+
+.btn {
+  border: 1.5px solid black;
+  background-color: black;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 2px;
+  transition: 0.4s ease;
+  font-size: 16px;
+  color: white;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1.5px solid black;
+  color: black;
+}
+
+.paralaxe {
+  padding: 265px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.branding-title h2 {
+  font-size:100px;
+  color: #C5C5C4;
+}
+
+.paralaxe-power{
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.paralaxe-power p{
+  font-size:400px;
+  margin:0;
+  color: #C4C4C4;
+  line-height: 300px;
+  text-align:center;
+  letter-spacing: 0.2em;
+}
+
+.modal-start {
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+  transition: 1.5s ease;
+}
+
+.opacity-on {
+  margin-top:-100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-power {
+  font-size:72px !important;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.abso-powerfull {
+  position: absolute;
+  right:10px;
+  top:0;
+}
+
+.wrapper-devise {
+  margin: 120px 0;
+  text-align: center;
+  max-width: 1152px;
+  margin:auto;
+}
+
+.text-description{
+  font-size: 24px;
+  margin-top: 80px;
+}
+
+.devise {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-h2 {
+  font-size: 100px;
+  letter-spacing: -0.1em;
+}
+
+.wrapper-branding {
+  max-width: 1152px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+.branding {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper-customer {
+  max-width: 1152px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.wrapper-customer .bloc-a-discover {
+  margin-top:100px;
+}
+
+.engagement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ipad-video{
+  width: 227px;
+  height: 430px;
+  border: 30px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.social-media p {
+  font-size:24px;
+  line-height: 40px;
+}
+
+.social {
+  font-size: 42px;
+  text-align: left;
+}
+
+.social p {
+  margin: 10px 0;
+}
+
+.wrapper-work {
+  max-width: 1152px;
+  margin: 0 auto 80px auto;
+}
+
+.wrapper-work h2{
+  text-align: center;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 80px;
+}
+
+.work p {
+  margin:0;
+}
+
+.work img {
+  width: 50%;
+}
+
+.wrapper-work .bloc-a-discover{
+  margin-top: 100px !important;
+  text-align: center;
+}
+
+.container-ux {
+  background-color: #DA4545;
+  padding: 10px 0;
+}
+.wrapper-ux {
+  max-width: 1152px;
+  margin: 0 auto 80px auto;
+  color: white;
+}
+.wrapper-ux h2{
+  text-align: center;
+}
+
+.creation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creation-description {
+  text-align: center;
+}
+
+.creation-description h3 {
+  font-size:64px;
+  line-height: 60px;
+  margin-top:0;
+}
+
+.creation-description p {
+  font-size:20px;
+  letter-spacing: 0.16em;
+  line-height: 25px;
+}
+
+.bloc-a-creation {
+  margin-top: 70px;
+}
+
+.btn-white {
+  border: 1.5px solid white;
+  background-color: white;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 2px;
+  transition: 0.4s ease;
+  font-size: 16px;
+  color: black;
+  border-radius: 2px;
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.iphone-dream {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.iphone-dream img{
+  width: 15%;
+}
+
+.impact-become {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-bubble {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+}
+
+.video-b{
+  margin-top:-20%;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.imp-be{
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  z-index: 20;
+}
+
+.imp-be h3 {
+  font-size: 100px;
+  margin: 10px 20px;
+  letter-spacing: -0.1em;
+}
+.create {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+}
+
+.create h3 {
+  margin: 0;
+  color: white;
+  font-size: 100px;
+  letter-spacing: -0.1em;
+}
+
+.video-party {
+  width: 100%;
+}
+
+.wrapper-video-party {
+  max-width: 1152px;
+  margin: 100px auto 0 auto;
+}

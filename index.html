@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marine à fond</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Telex&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="modal-start" id="modal" style="background-image:url('banner.gif');">
+  </div>
+  <div class="wrapper hidden" id="wrapper">
+     <video autoplay loop muted class="wrapper__video">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-open-office-space-914-large.mp4">
+     </video>
+     <div class="text-banner">
+        <div class="text-content">
+          <h1 class="typewrite" data-period="2000" data-type='[ "UXI AGENCY.", "WE ARE CREATIVE.", "WE LOVE DESIGN.", "WE DEVELOP FOR YOU." ]'>
+          <span class="wrap"></span>
+          </h1>
+          <a href="#" class="btn">CONTACT US</a>
+        </div>
+     </div>
+  </div>
+  <div class="wrapper-work">
+    <h2 class="title-h2">How we work</h2>
+    <div class="work">
+      <p>Reflect<br>Design<br>developp<br>your app is<br>our project</p>
+      <img src="mac-moon.jpg" alt="mac with moon image">
+    </div>
+    <div class="bloc-a-discover">
+      <a href="#" class="btn">DISCOVER</a>
+    </div>
+  </div>
+  <div class="container-ux">
+    <div class="wrapper-ux">
+      <h2 class="title-h2">01 Creation</h2>
+      <div class="creation">
+        <div class="creation-description">
+          <h3>Let’s build your perfect user experience</h3>
+          <p>We understand your needs<br>and values to help you<br>immerse creative ideas.</p>
+          <div class="bloc-a-creation">
+            <a href="#" class="btn-white">DISCOVER</a>
+          </div>
+        </div>
+        <div class="ux-title">
+          <h2>UX</h2>
+        </div>
+      </div>
+      <div class="iphone-dream">
+        <img src="iphone-dream.png" width="135" alt="iphone with image dream">
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-content hidden">
+    <div class="bloc-work" id="module" style="background-image: url(banner-bull.jpg);">
+      <div class="ux-description">
+        <h3>BUILD SOMETHING UNFORGETTEABLE</h3>
+        <hr>
+        <p>Make a user experience strong and powerful in adequation with your branding style. Your story is awesome. We use a UX and UI methodology user centric to create a unique user experience</p>
+        <a href="#" class="btn">DISCOVER</a>
+      </div>
+      <div class="ux-title">
+        <h2>UX</h2>
+      </div>
+    </div>
+  </div>
+  <div class="paralaxe-power hidden" style="background-image: url(water.gif);">
+    <div class="para">
+      <p>PO<br>W<br>ER</p>
+    </div>
+    <div class="abso-powerfull">
+      <p class="text-power">POWER<span style="color:#FA8E8E !important;">FULL</span></p>
+    </div>
+  </div>
+  <div class="wrapper-devise">
+    <h2 class="title-h2">Responsive Design 02</h2>
+    <div class="devise">
+      <img src="devise.jpg" alt="Desktop">
+      <div class="ux-title">
+        <h2>UI</h2>
+      </div>
+    </div>
+    <p class="text-description">We create graphic interfaces in line with<br>your brand image and your values.</p>
+  </div>
+  <div class="wrapper-branding">
+    <h2 class="title-h2">03 Branding</h2>
+    <div class="branding">
+      <img src="brand-one.jpg" alt="branding image one">
+      <img src="brand-two.jpg" alt="branding image three">
+      <img src="brand-three.jpg" alt="branding image three">
+    </div>
+    <p class="text-description">We make a strong and powerful user experience<br>in adequation with your branding style.</p>
+  </div>
+  <div class="impact-become">
+    <div class="video-bubble">
+      <video autoplay loop muted class="video-b">
+          <source src="https://mstq.io/wp-content/themes/theme/library/videos/C.mp4">
+       </video>
+    </div>
+    <div class="imp-be">
+      <h3>Impact</h3>
+      <h3>Become</h3>
+    </div>
+    <div class="create">
+      <h3>Create</h3>
+    </div>
+  </div>
+  <div class="wrapper-customer">
+    <h2 class="title-h2">Customer engagement</h2>
+    <div class="engagement">
+      <div class="social-media">
+        <p>We use<br>our content to<br>re-target<br> influencer<br>audiences.</p>
+        <div class="icons">
+          <i>INSTAGRAM</i>
+          <i>LINKEDIN</i>
+          <i>MAIL</i>
+        </div>
+      </div>
+      <div class="video-ipad">
+        <video autoplay loop muted class="ipad-video">
+          <source src="https://player.vimeo.com/external/380057751.sd.mp4?s=a859a579703b51e292efd1eeb24d900351a5d92c&profile_id=165&oauth2_token_id=57447761">
+        </video>
+      </div>
+      <div class="social">
+        <p>Social Networks</p>
+        <p>Data analyze</p>
+      </div>
+    </div>
+    <div class="bloc-a-discover">
+      <a href="#" class="btn">CONTACT US</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    let modal = document.getElementById("modal");
+    let wrapper = document.getElementById("wrapper");
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    async function modalHidden() {
+      await sleep(3500);
+      console.log("off")
+      modal.classList.add("opacity-on");
+      wrapper.classList.remove("hidden");
+    };
+    modalHidden();
+
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+  </script>
+</body>
+</html>
